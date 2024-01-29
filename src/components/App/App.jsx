@@ -1,5 +1,3 @@
-import css from './App.module.css';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { lazy, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
