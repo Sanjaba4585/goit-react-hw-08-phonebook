@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Item = styled.li`
   position: relative;
@@ -16,17 +16,24 @@ export const List = styled.ul`
 `;
 
 export const Button = styled.button`
-  padding: 4px;
-  border: 2px solid rgb(8, 41, 17);
+  border: 1px solid;
+  color: rgb(63, 94, 251);
   border-radius: 4px;
+  font-weight: 500;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   cursor: pointer;
-  color: rgb(222, 206, 169);
-  background-color: #252124;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: 0.4s;
+  color: #f0eaea;
   &:hover {
-    transform: scale(1.05);
-    background: rgb(104 91 101);
-    box-shadow: 5px 3px 10px 1px;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
   }
 `;
 

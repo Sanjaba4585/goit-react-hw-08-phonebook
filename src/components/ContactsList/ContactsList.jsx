@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-import css from './ContactsList.module.css';
 import { deleteContactsThunk } from '../../redux/contactsSlice/operations';
 import { Button, Item, List, Loading } from './ContactsList.styled';
 import { Text } from '@chakra-ui/react';

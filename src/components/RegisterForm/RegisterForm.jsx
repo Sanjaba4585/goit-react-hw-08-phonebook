@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { registerThunk } from '../../redux/auth/operations';
 import css from './RegisterForm.module.css';
-import { Button, Input } from '@chakra-ui/react';
+import { Input } from '@chakra-ui/react';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -21,44 +21,43 @@ export const RegisterForm = () => {
   };
 
   return (
-    // <div className={css.container}>
-    //   <h1 className={css.title}>Registration</h1>
-    <form onSubmit={handleSubmit} autoComplete="off" className={css.form}>
-      <label>
-        Username
-        <Input
-          type="text"
-          name="name"
-          size={'sm'}
-          width={'300px'}
-          borderColor={'#56bd77'}
-        />
-      </label>
-      <label>
-        Email
-        <Input
-          type="email"
-          name="email"
-          size={'sm'}
-          width={'300px'}
-          borderColor={'#56bd77'}
-        />
-      </label>
-      <label>
-        Password
-        <Input
-          type="password"
-          name="password"
-          size={'sm'}
-          width={'300px'}
-          borderColor={'#56bd77'}
-        />
-      </label>
-      <Button type="submit" size={'sm'}>
-        Register
-      </Button>
-    </form>
-    // </div>
+    <div className={css.container}>
+      <h1 className={css.title}>Registration</h1>
+      <form onSubmit={handleSubmit} autoComplete="off" className={css.form}>
+        <label>
+          <Input
+            className={css.input}
+            type="text"
+            name="name"
+            size={'sm'}
+            width={'300px'}
+            placeholder="Enter your name"
+          />
+        </label>
+        <label>
+          <Input
+            className={css.input}
+            type="email"
+            name="email"
+            size={'sm'}
+            width={'300px'}
+            placeholder="Enter your email"
+          />
+        </label>
+        <label>
+          <Input
+            className={css.input}
+            type="password"
+            name="password"
+            size={'sm'}
+            width={'300px'}
+            placeholder="password"
+          />
+        </label>
+
+        <Input type="submit" value="Registration" className={css.button} />
+      </form>
+    </div>
   );
 };
 

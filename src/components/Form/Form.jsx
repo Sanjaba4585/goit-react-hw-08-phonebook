@@ -34,32 +34,32 @@ export const Form = () => {
   // const { name, number } = form;
 
   return (
-    // <div className={css.container}>
-    <form onSubmit={formSubmit}>
-      <label>
-        <title className={css.title}>Name</title>
-        <Input
-          className={css.input}
-          type="text"
-          name="name"
-          placeholder="Oleksandr Korniichuk"
-          required
-          id={nameInputId}
-        />
-        <title className={css.title}>Number</title>
-        <Input
-          className={css.input}
-          type="tel"
-          name="number"
-          placeholder="123-45-67"
-          required
-          id={numberInputId}
-        />
-      </label>
-      <Button type="submit" className={css.btnSubmit}>
-        Add contact
-      </Button>
-    </form>
-    // </div>
+    <div className={css.container}>
+      <form onSubmit={formSubmit}>
+        <label>
+          <h1 className={css.title}>Name</h1>
+          <Input
+            className={css.input}
+            type="text"
+            name="name"
+            placeholder="Oleksandr Korniichuk"
+            required
+            id={nameInputId}
+          />
+          <h1 className={css.title}>Number</h1>
+          <Input
+            className={css.input}
+            type="tel"
+            name="number"
+            placeholder="123-45-67"
+            required
+            id={numberInputId}
+          />
+        </label>
+        <Button type="submit" className={css.btnSubmit}>
+          Add contact
+        </Button>
+      </form>
+    </div>
   );
 };

@@ -1,24 +1,16 @@
-.container {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid;
-  border-radius: 4px;
+.div {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
-
 .title {
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.input {
-  margin-bottom: 20px;
-  border: 1px solid;
-  border-radius: 4px;
-}
-
-.btnSubmit {
-  display: block;
+.button {
   border: 1px solid;
   color: rgb(63, 94, 251);
   border-radius: 4px;
@@ -33,7 +25,7 @@
   color: #f0eaea;
 }
 
-.btnSubmit:hover {
+.button:hover {
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,

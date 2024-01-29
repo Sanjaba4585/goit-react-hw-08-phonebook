@@ -9,6 +9,7 @@ export const LoginForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+
     dispatch(
       loginThunk({
         email: form.elements.email.value,
@@ -19,24 +20,28 @@ export const LoginForm = () => {
   };
 
   return (
-    // <div className={css.container}>
-    //   <div className={css.loginForm}>
-    //     <h1 className={css.title}>Login</h1>
-    <form
-      onSubmit={handleSubmit}
-      autoComplete="off"
-      action="#"
-      className={css.form}
-    >
-      <Input type="text" placeholder="Enter your email" className={css.input} />
-      <Input
-        type="password"
-        placeholder="Enter your password"
-        className={css.input}
-      />
-      <Input type="button" value="Login" className={css.button} />
-    </form>
-    //   </div>
-    // </div>
+    <div className={css.container}>
+      <h1 className={css.title}>Login</h1>
+      <form
+        onSubmit={handleSubmit}
+        autoComplete="off"
+        action="#"
+        className={css.form}
+      >
+        <Input
+          type="text"
+          placeholder="Enter your email"
+          className={css.input}
+          name="email"
+        />
+        <Input
+          type="password"
+          placeholder="Enter your password"
+          className={css.input}
+          name="password"
+        />
+        <Input type="submit" value="Login" className={css.button} />
+      </form>
+    </div>
   );
 };

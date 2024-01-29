@@ -1,11 +1,11 @@
-import { LogOutDiv } from 'components/UserMenu/UserMenu,styled';
+import css from './AuthNav.module.css';
 import { NavLink } from 'react-router-dom';
 
 export const AuthNav = () => {
   return (
-    <LogOutDiv>
+    <div className={css.div}>
       <NavLink to="/register">Register</NavLink>
       <NavLink to="/login">Login</NavLink>
-    </LogOutDiv>
+    </div>
   );
 };
