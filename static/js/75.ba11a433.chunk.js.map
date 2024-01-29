@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/75.ba11a433.chunk.js","mappings":"2LAAe,SAASA,IAIxB,C","sources":["pages/Home/Home.js"],"sourcesContent":["export default function Home() {\n  <div>\n    <title>Task manager welcome page</title>\n  </div>;\n}\n"],"names":["Home"],"sourceRoot":""}
